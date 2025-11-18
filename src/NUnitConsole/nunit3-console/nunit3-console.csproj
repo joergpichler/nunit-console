@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>NUnit.ConsoleRunner</RootNamespace>
     <AssemblyName>nunit3-console</AssemblyName>
-    <TargetFrameworks>net462;net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net462;net8.0;net10.0</TargetFrameworks>
     <RollForward>Major</RollForward>
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
@@ -16,7 +16,7 @@
     <Description>The standard command-line runner for NUnit</Description>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='net8.0'">
+  <PropertyGroup Condition="'$(TargetFramework)'=='net8.0' or '$(TargetFramework)'=='net10.0'">
     <Product>NUnit NetCore Console Runner</Product>
     <AssemblyTitle>NUnit NetCore Console Runner ($(TargetFramework))</AssemblyTitle>
     <Description>The dotnet command-line runner for NUnit</Description>
